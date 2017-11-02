@@ -2,7 +2,7 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class Donorhub < OmniAuth::Strategies::OAuth
+    class Donorhub < OmniAuth::Strategies::OAuth2
       option :name, 'donorhub'
 
       option :client_options, {
