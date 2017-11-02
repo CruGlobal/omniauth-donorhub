@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Tataihono Nikora']
   spec.email         = ['tataihono.nikora@cru.org']
 
-  gem.description   = %q{DonorHub strategy for OmniAuth}
-  gem.summary       = %q{DonorHub strategy for OmniAuth}
-  gem.homepage      = 'https://github.com/CruGlobal/omniauth-donorhub'
+  spec.description   = %q{DonorHub strategy for OmniAuth}
+  spec.summary       = %q{DonorHub strategy for OmniAuth}
+  spec.homepage      = 'https://github.com/CruGlobal/omniauth-donorhub'
   spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
