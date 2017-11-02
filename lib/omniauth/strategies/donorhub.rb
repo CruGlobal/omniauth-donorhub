@@ -9,6 +9,10 @@ module OmniAuth
         site: ''
       }
 
+      option :authorize_params, {
+        client_instance: 'n/a'
+      }
+
       uid { request.params['id'] }
 
       info do
