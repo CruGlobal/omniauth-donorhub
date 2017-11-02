@@ -6,7 +6,7 @@ module OmniAuth
       option :name, 'donorhub'
 
       option :client_options, {
-        site: request.params['oauth_url']
+        site: ''
       }
 
       uid { request.params['id'] }
