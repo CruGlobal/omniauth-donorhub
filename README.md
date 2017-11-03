@@ -24,10 +24,12 @@ Here's a quick example, adding the middleware to a Rails app in `config/initiali
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :donorhub,
            ENV['DONORHUB_CLIENT_ID'],
-           ENV['DONORHUB_CLIENT_SECRET']
+           ENV['DONORHUB_CLIENT_SECRET'],
+           'https://www.mytntware.com/dataserver/toontown/staffportal/oauth/authorize.aspx'
 end
 ```
 
+You are also able to override the default `oauth_url` by including an `oauth_url` in when redirecting a user to the request.
 
 ## Contributing
 
