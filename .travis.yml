@@ -3,8 +3,16 @@ cache:
   bundler: true
 language: ruby
 script:
-  - bundle exec rspec
+- bundle exec rspec
 branches:
   only:
   - master
   - staging
+deploy:
+  provider: rubygems
+  api_key:
+    secure: m7GjlYAYGEFGv30mlgudgWO/WhfIyY+5mLBZBm1ykkslZnVz/ADvNjgb4FvARKOi1y8XldSkeAdr6AxTxZhNmPuvwWZhPnxsUpKtsfWj4ALkx8IFYgIs7ephPwZxSeQ1lDSGTMD3O0JtGs1FWDnPV0X9QJiTd6vCwNO2Cw8eFM6KinUx4ScrppLydW6iK7zoVcb8RSddz7PwCm0wgRxpfwlt/oP2yu8z3eiHwbRDcusSX1qy8c42hh8fttUQEmVpjX/5LRR4HXkP4hEzuXHioRFjYpsysN/2qHbNtOwnZXQB7bxeMMqqyMc60rLQRBQNJFWA+0bEph0JM20//sW1ZX4TvQA2aplgvVuVVlf8L9BtH+Ga+ReHRe5sdZTYrWUktBReWoyo2oh0I12G7BYBTrfKE9yOfc3R0eu4efXst1lCS24BB0ZgCq3J2ApMXpjBzjN6BpnvQy+6DTBQsKplbkjEN4BWwbKo1TPcfQw6rGaGCkihm3lH83YHlx38O0KvOKlNTduMXbDiBZ+KB5pml+Kz5lhWiat2iujrd/UVO/ouAPjdm1OlsFDn7YyMJMhUfdjGVO95wGCZLl9vb/apsiB1VXWlpBO5t1g8I611lVAUpslz24fKGFFMFTxWqi3xRVAeaaadI3mPeMGhkdEVjMPMyWDL5wkHxOUpUTudD98=
+  gem: omniauth-donorhub
+  on:
+    tags: true
+    repo: CruGlobal/omniauth-donorhub
