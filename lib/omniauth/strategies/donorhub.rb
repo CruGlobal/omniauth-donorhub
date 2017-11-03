@@ -19,8 +19,7 @@ module OmniAuth
       uid { request.params['id'] }
 
       info do
-        {
-        }
+        {}
       end
 
       extra do
