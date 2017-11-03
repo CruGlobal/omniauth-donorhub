@@ -6,7 +6,8 @@ module OmniAuth
       option :name, 'donorhub'
 
       option :client_options, {
-        site: ''
+        site: '',
+        token_method: :get
       }
 
       option :authorize_params, {
@@ -28,6 +29,12 @@ module OmniAuth
 
       def raw_info
         @raw_info ||= {}
+      end
+
+      def query_string
+        request.delete_param('code')
+        request.delete_param('state')
+        request.params.to_query ? "?#{request.params.to_query}" : ''
       end
     end
   end
