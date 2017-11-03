@@ -1,5 +1,7 @@
 require 'bundler/setup'
+require 'rspec'
 require 'omniauth/donorhub'
+require 'shared_examples'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
