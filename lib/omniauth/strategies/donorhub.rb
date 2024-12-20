@@ -46,6 +46,14 @@ module OmniAuth
         super
       end
 
+      def token_params
+        options.token_params = options.token_params.merge({
+          client_id: options.client_id,
+          client_secret: options.client_secret,
+        })
+        super
+      end
+
       private
 
       def oauth_path
